@@ -43,19 +43,11 @@ header .list{
     box-shadow: black 3px 3px 3px;
     width: 7rem;
 }
-.list button:hover{
-    background-color: #948979;
-    border: #DFD0B8;
-}
 .container button{
     background-color: #DFD0B8;
     border: #948979 solid 3px;
     margin-top: 10px;
     color: #948979;
-}
-.container button:hover{
-    background-color: #DFD0B8;
-    border: #948979;
 }
 .container{
     display: flex;
