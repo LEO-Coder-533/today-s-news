@@ -63,7 +63,7 @@ header .list{
     flex-wrap: wrap;
 }
 .newse , .newin , .newfn , .newsp , .newak{
-    border: 1px solid black;
+    border: 2px solid #948979;
     background-color: antiquewhite;
     padding: 25px;
     margin: 20px;
@@ -85,4 +85,28 @@ header .list{
 .container p button:hover{
     transform: scale(1.08);
     transition: all 0.5s;
+}
+@media (max-width:425px) {
+    .list button{
+            width: 3.5rem;
+            font-size: 14px;
+            padding: 2.5px;
+            border-radius: 7.5px;
+            box-shadow: black 1.5px 1.5px 1.5px;
+    }
+    .newse , .newin , .newfn , .newsp , .newak{
+        font-size: 16px;
+    }
+}
+@media (max-width:320px) {
+    .list button{
+            width: 2.5rem;
+            font-size: 10px;
+            padding: 1.5px;
+            border-radius: 5.5px;
+            box-shadow: black 1px 1px 1px;
+    }
+    .newse , .newin , .newfn , .newsp , .newak{
+        font-size: 10px;
+    }
 }
