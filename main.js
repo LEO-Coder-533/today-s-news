@@ -1,12 +1,14 @@
 let btnopen = document.getElementById('open');
 let btnclose = document.getElementById('close');
 let container = document.querySelector('.container');
-let information = document.getElementById('information');
+let active = document.getElementById('active');
 let fn = document.getElementById('fn');
 let sport = document.getElementById('sport');
-let informationc = document.getElementById('informationc');
+let other = document.getElementById('other');
+let activec = document.getElementById('activec');
 let fnc = document.getElementById('fnc');
 let sportc = document.getElementById('sportc');
+let otherc = document.getElementById('otherc');
 let cancel = document.getElementById('cancel');
 
 btnclose.onclick = function(){
@@ -20,22 +22,32 @@ btnopen.onclick = function(){
     btnopen.classList.add('hide');
 }
 fn.onclick = function(){
-    informationc.classList.add('hide')
+    activec.classList.add('hide')
     fnc.classList.remove('hide')
     sportc.classList.add('hide')
+    otherc.classList.add('hide')
 }
 sport.onclick = function(){
-    informationc.classList.add('hide')
+    activec.classList.add('hide')
     fnc.classList.add('hide')
     sportc.classList.remove('hide')
+    otherc.classList.add('hide')
 }
-information.onclick = function(){
-    informationc.classList.remove('hide')
+active.onclick = function(){
+    activec.classList.remove('hide')
     fnc.classList.add('hide')
     sportc.classList.add('hide')
+    otherc.classList.add('hide')
+}
+other.onclick = function(){
+    activec.classList.add('hide')
+    fnc.classList.add('hide')
+    sportc.classList.add('hide')
+    otherc.classList.remove('hide')
 }
 cancel.onclick = function(){
-    informationc.classList.add('hide')
+    activec.classList.add('hide')
     fnc.classList.add('hide')
     sportc.classList.add('hide')
+    otherc.classList.add('hide')
 }

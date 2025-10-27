@@ -6,50 +6,62 @@
     box-sizing: border-box;
     font-family: "Lalezar", sans-serif;
 }
+p{
+    font-size: 28px;
+    text-align: center;
+}
 body{
-    background-color: #222831;
+    background-color: #6482AD;
 }
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #393E46;
+    background-color: #7FA1C3;
     padding: 20px;
     margin: 10px;
     border-radius: 24px;
-    border: solid 3px #948979;
+    border: solid 3px #AED6CF;
     box-shadow: black 3px 3px 3px;
 }
-header h1{
+.texts h1{
     color: #ffffff;
     width: 50%;
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
+    width: max-content;
+}
+.texts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 header .list{
     width: 50%;
 }
+
 .list{
     text-align: center;
 }
 .list button{
     cursor: pointer;
-    color: #DFD0B8;
+    color: #647FBC;
     font-size: 16px;
     border: 0;
     background-color: transparent;
     padding: 5px;
     border-radius: 15px;
-    background-color: #948979;
-    border: #DFD0B8 solid 3px;
+    background-color: #AED6CF;
+    border: #647FBC solid 3px;
     box-shadow: black 3px 3px 3px;
     width: 7rem;
 }
 .container button{
-    background-color: #DFD0B8;
-    border: #948979 solid 3px;
+    background-color: #647FBC;
+    border: #AED6CF solid 3px;
     margin-top: 10px;
-    color: #948979;
+    color: #AED6CF;
 }
 .container{
     display: flex;
@@ -64,9 +76,9 @@ header .list{
     align-items: center;
     flex-wrap: wrap;
 }
-.newse , .newin , .newfn , .newsp , .newak{
-    border: 2px solid #948979;
-    background-color: antiquewhite;
+.new{
+    border: 2px solid #AED6CF;
+    background-color: #0ABAB5;
     padding: 25px;
     margin: 20px;
     display: flex;
@@ -76,20 +88,21 @@ header .list{
     font-size: 30px;
     border-radius: 15px;
 }
- .newin:hover , .newfn:hover , .newsp:hover{
+.new:hover{
     transform: scale(1.03);
     transition: all 0.5s;
 }
 div img{
     width: 175px;
     border-radius: 15px;
-    border: solid #393E46;
+    border: solid #7FA1C3;
 }
+
 div a{
-    color: #948979;
+    color: #AED6CF;
     text-decoration: none;
 }
-.newin , .newfn , .newsp{
+.new{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -110,7 +123,7 @@ div a{
             border-radius: 7.5px;
             box-shadow: black 1.5px 1.5px 1.5px;
     }
-    .newin , .newfn , .newsp{
+    .new{
         font-size: 16px;
     }
 }
@@ -122,7 +135,7 @@ div a{
             border-radius: 5.5px;
             box-shadow: black 1px 1px 1px;
     }
-    .newin , .newfn , .newsp{
+    .new{
         font-size: 10px;
     }
 }
